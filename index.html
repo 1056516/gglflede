@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Browser Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="profile">
+            <button onclick="alert('Profile management not implemented.')">Profile</button>
+        </div>
+        <input type="text" placeholder="Search or enter URL" id="urlInput">
+        <button id="searchBtn">Search</button>
+        <button id="newTabBtn">New Tab</button>
+    </div>
+
+    <div class="tabs">
+        <div class="tab active">New Tab</div>
+    </div>
+
+    <div class="content">
+        <iframe id="iframeContent" src="about:blank"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
